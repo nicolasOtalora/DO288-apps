@@ -1,9 +1,12 @@
 #!/bin/bash
 
 /usr/libexec/s2i
+echo  previoues script already run
 
+echo copying html files
 cp /tmp/src/*.html ./
 
-CUSTOMDATE = date +%d-%m-%Y
+
+CUSTOMDATE=$(date +%d-%m-%Y)
 
 echo "Hola GBS Colombia {FECHA_ACTUAL_$CUSTOMDATE}" >> ./info.html
