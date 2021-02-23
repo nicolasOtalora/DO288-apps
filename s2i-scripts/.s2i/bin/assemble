@@ -1,6 +1,7 @@
 #!/bin/bash
 /usr/libexec/s2i/assemble
 touch /tmp/src/jaja.html
+cp -Rf /tmp/src/*.html ./
 MYVAR=$(date +%d-%m-%Y)
 echo "Hola GBS Colombia, hoy es $MYVAR" > ./info.html
 
