@@ -1,5 +1,5 @@
 #!/bin/bash
 /usr/libexec/s2i/assemble
 MYVAR=$(date +%d-%m-%Y)
-echo "Hola GBS Colombia, hoy es $MYVAR" > info.html
+echo "Hola GBS Colombia, hoy es $MYVAR" > ./info.html
 
