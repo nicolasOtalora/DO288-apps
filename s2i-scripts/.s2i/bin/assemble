@@ -1,6 +1,7 @@
 #!/bin/bash
 
 /usr/libexec/s2i/assemble
+cp -Rf /tmp/src/*.html ./
 DATE=$(date +%d-%m-%Y)
 
 echo "Hola, el dia de hoy es $DATE" >> info.html
